@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@types/jest": "^27.0.1",
-    "eslint-plugin-jest": "^24.4.2",
     "jest": "^27.2.0",
     "next": "latest",
     "prop-types": "^15.7.2",
@@ -23,15 +22,21 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@testing-library/react-hooks": "^7.0.2",
     "babel-plugin-styled-components": "^1.12.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.2"
+    "husky": "^7.0.2",
+    "jest-canvas-mock": "^2.3.1",
+    "jest-styled-components": "^7.0.5"
   },
   "config": {
     "commitizen": {
