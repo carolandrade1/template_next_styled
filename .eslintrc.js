@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    'jest/globals': true,
   },
   extends: [
     'plugin:react/recommended',
@@ -20,4 +21,17 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
+  overrides: [
+    {
+      files: [
+        '**/*.test.js',
+      ],
+      plugins: ['jest'],
+      env: {
+        jest: true,
+      },
+      // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+      ...require('eslint-plugin-jest').configs.recommended,
+    },
+  ],
 };
