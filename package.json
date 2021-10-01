@@ -12,7 +12,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^27.0.2",
     "jest": "^27.2.0",
     "next": "latest",
     "prop-types": "^15.7.2",
